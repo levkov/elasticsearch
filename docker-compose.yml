@@ -1,0 +1,11 @@
+elasticsearch:
+  build: .
+  ports:
+  - "222:22"
+  - "9001:9001"
+  - "9200:9200"
+  hostname: elasticsearch
+  environment:
+    ADMIN_USER: guram
+    ADMIN_PASSWORD: verystrongpassword
+  privileged: true
