@@ -23,5 +23,5 @@ RUN apt-get update && apt-get install elasticsearch
 
 RUN chmod 777 /var/lib/elasticsearch
 
-COPY conf/supervisord.conf /etc/supervisor/supervisord.conf
+COPY conf/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY conf/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml
